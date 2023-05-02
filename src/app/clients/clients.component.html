@@ -1,0 +1,22 @@
+<div class="container text-center bg-warning text-dark">
+  <div class="row mb-4 mt-4">
+    <h2>Tabela de Clientes</h2>
+  </div>
+  <table class="table bg-primary text-light">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let client of Clients">
+        <th scope="row">{{client.id}}</th>
+        <td>{{client.name}}</td>
+        <td>{{client.email}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
