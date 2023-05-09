@@ -1,7 +1,29 @@
 {
-  "clients" : [
-    {"id" : 1, "name" : "Marina Silva", "email" : "marinasilva@gmail.com"},
-    {"id" : 2, "name" : "José Sbrocco", "email" : "josehsbrocco@gmail.com"},
-    {"id" : 3, "name" : "Glauco Tadeusco", "email" : "glaucotodesco@gmail.com"}
+  "clients": [
+    {
+      "id": 1,
+      "name": "Marina Silva",
+      "email": "marinasilva@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "José Sbrocco",
+      "email": "josehsbrocco@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Glauco Tadeusco",
+      "email": "glaucotodesco@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "Sérgio Donisete Clauss",
+      "email": "sergiow@donisete.com.br"
+    },
+    {
+      "id": 5,
+      "name": "Francisco Benedetti",
+      "email": "chico.benedetti@gmail.com"
+    }
   ]
 }

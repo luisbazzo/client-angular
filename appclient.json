@@ -1,7 +1,0 @@
-{
-  "clients" : [
-    {"id" : 1, "name" : "Marina Silva", "email" : "marinasilva@gmail.com"},
-    {"id" : 2, "name" : "José Sbrocco", "email" : "josehsbrocco@gmail.com"},
-    {"id" : 3, "name" : "Glauco Tadeusco", "email" : "glaucotodesco@gmail.com"}
-  ]
-}
