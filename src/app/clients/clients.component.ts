@@ -12,6 +12,7 @@ export class ClientsComponent implements OnInit{
 
   Clients : client[] = [];
   formGroupClient : FormGroup;
+  isEditing : boolean = false;
 
   constructor(private ClientsService : ClientsService,
               private formBuilder : FormBuilder
@@ -37,13 +38,37 @@ export class ClientsComponent implements OnInit{
   }
 
   save(){
-    this.ClientsService.save(this.formGroupClient.value).subscribe(
-      {
-        next : data => {
-          this.Clients.push(data);
-          this.formGroupClient.reset();
+    if(this.isEditing){
+      this.ClientsService.update(this.formGroupClient.value).subscribe(
+        {
+          next : () => {
+            this.loadClients();
+            this.formGroupClient.reset();
+            this.isEditing = false;
+          }
         }
-      }
-    );
+      );
+    }
+    else{
+      this.ClientsService.save(this.formGroupClient.value).subscribe(
+        {
+          next : data => {
+            this.Clients.push(data);
+            this.formGroupClient.reset();
+          }
+        }
+      );
+    }
+  }
+
+  edit(client : client){
+    this.formGroupClient.setValue(client);
+    this.isEditing = true;
+  }
+
+  delete(client : client): void{
+    this.ClientsService.remove(client).subscribe({
+      next: () => this.loadClients()
+    });
   }
 }

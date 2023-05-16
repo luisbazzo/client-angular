@@ -1,6 +1,6 @@
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, retry } from 'rxjs';
 import { client } from './client';
 
 @Injectable({
@@ -18,5 +18,13 @@ export class ClientsService {
 
   save(client : client): Observable<client>{
     return this.http.post<client>(this.url, client);
+  }
+
+  remove(client : client): Observable<void>{
+    return this.http.delete<void>(`${this.url}/${client.id}`);
+  }
+
+  update(client : client): Observable<client>{
+    return this.http.put<client>(`${this.url}/${client.id}`, client);
   }
 }

@@ -7,7 +7,7 @@
     },
     {
       "id": 2,
-      "name": "José Sbrocco",
+      "name": "José Henrique Sbrocco",
       "email": "josehsbrocco@gmail.com"
     },
     {
@@ -16,14 +16,24 @@
       "email": "glaucotodesco@gmail.com"
     },
     {
-      "id": 4,
-      "name": "Sérgio Donisete Clauss",
-      "email": "sergiow@donisete.com.br"
+      "id": 5,
+      "name": "Francisco Benedete",
+      "email": "chico.benedetti@gmail.com"
     },
     {
-      "id": 5,
-      "name": "Francisco Benedetti",
-      "email": "chico.benedetti@gmail.com"
+      "id": 6,
+      "name": "Sérgio Donisete Clauss",
+      "email": "klauss@gmail.com"
+    },
+    {
+      "id": 7,
+      "name": "Francisco Bianchi",
+      "email": "fbi@terra.com.br"
+    },
+    {
+      "id": 8,
+      "name": "Victor Miranda Maximo",
+      "email": "vmm@gmail.com"
     }
   ]
 }
